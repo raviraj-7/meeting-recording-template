@@ -50,7 +50,7 @@ export const ParticipantRosterLayout: React.FC<ParticipantRosterLayoutProps> = (
 
           return (
             <div
-              className={`participant_identity ${isSpeaking ? 'speaking blue-border' : ''}`}
+              className={`participant_identity ${isSpeaking ? 'speaking' : ''}`}
               key={participant.identity}
             >
               {videoTrack ? (
@@ -62,7 +62,10 @@ export const ParticipantRosterLayout: React.FC<ParticipantRosterLayoutProps> = (
                   </svg>
                 </div>
               )}
-              <div className="participant_name">{participant.name || (participant.identity.includes("note-taker") ? "Note Taker" : participant.identity)}</div>
+              <div className="participant_name">{
+                (participant?.name?.includes("note-taker") ? "Note Taker" : participant.name) || 
+                (participant?.identity?.includes("note-taker") ? "Note Taker" : participant.identity)
+              }</div>
             </div>
           );
         })}
