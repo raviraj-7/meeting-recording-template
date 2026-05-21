@@ -1,6 +1,6 @@
 {
   "name": "livekit-egress-web",
-  "homepage": "/",
+  "homepage": "http:///",
   "description": "Default templates for RoomComposite egress",
   "version": "0.2.1",
   "private": true,
@@ -53,5 +53,16 @@
     "@types/react-router-dom": "^5.3.3",
     "gh-pages": "^5.0.0",
     "typescript": "^5.8.3"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelPbx/meeting-recording-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelPbx/meeting-recording-template/issues"
   }
 }
